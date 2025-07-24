@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FOR TALITA</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor-heart"></div>
+  <div class="container">
+    <div id="page1" class="page active">
+      <h1>HAIIII TALITAAA ANAK CANTIIKKK</h1>
+      <p><strong>akuu mau bilang sesuatuu sama kamuuu</strong></p>
+      <p><strong>aku udah lama mikir gimana cara yang pas buat bilang ini ke kamu, tapi makin aku simpen, makin rasanya hati ini penuh. aku gak bisa terus pura-pura biasa aja.</strong></p>
+      <p><strong>Hari demi hari, perasaan ini makin gedee. Aku suka banget sama kamu, Talitaaa Bener-bener suka. Suka cara kamu ketawa, cara kamu cerita soal hari kamuu</strong></p>
+      <p><strong>Kamu itu beda dari yang lain. Kamu punya semangat yang gak semua orang punya. Meski kadang kamu capek, kamu tetap bisaa kuatt. Sering yapping? Iya. tapi itu bagian dari kamu yang aku syukuri bisa kenal sama kamuu</strong></p> 
+      <p><strong>Aku pernah cari tahu, gimana sih rasanya sayang sama seseorang — yang bikin lo mau ada terus buat dia, yang bikin lo pengen ngertiin dan jagain dia tanpa alasan?</strong><br />
+      Dan tiap kali aku nanya itu ke diri sendiri, jawabannya selalu balik ke satu nama... <strong>Talita.</strong></p>
+
+      <p><strong>Aku gak janji bakal jadi pasangan yang sempurna. Tapi aku janji bakal terus belajar ngerti kamu, sabar sama kamu, dan nemenin kamu — dalam hal remeh sampai yang berat. Aku pengen jadi tempat kamu pulang, tempat kamu cerita, tempat kamu bisa jadi diri kamu sendiri.</strong></p>
+
+      <p><strong>Jadi hari ini... aku kumpulin keberanian buat bilang satu hal:</strong></p>
+      <button onclick="nextPage()">Lanjut</button>
+    </div>
+
+    <div id="page2" class="page">
+      <h2>Will You Be My Girlfriend?💗</h2>
+      <div class="btn-group">
+        <button onclick="nextPage()">YES</button>
+        <button id="noBtn">NO</button>
+      </div>
+    </div>
+
+    <div id="page3" class="page">
+      <h2>Atur tempat first date kita</h2>
+      <form id="dateForm">
+        <label>
+          <p><strong>Tanggal:</strong></p>
+          <input type="date" id="date" required />
+        </label><br />
+        <label>
+          <p><strong>Waktu:</strong></p>
+          <input type="time" id="time" required />
+        </label><br />
+        <label>
+          <p><strong>Pilih tempat:</strong></p>
+          <div class="image-options">
+            <label>
+              <input type="radio" name="tempat" value="1" required />
+              <img src="bebek.jpg" alt="Bebek Bohay" />
+            </label>
+            <label>
+              <input type="radio" name="tempat" value="2" />
+              <img src="blokm.jpg" alt="Blok M" />
+            </label>
+            <label>
+              <input type="radio" name="tempat" value="3" />
+              <img src="tim.jpg" alt="TIM" />
+            </label>
+          </div>
+        </label><br />
+        <button type="submit" class="lanjutkan-btn">Lanjutkan</button>
+      </form>
+    </div>
+
+    <div id="page4" class="page">
+      <h2>Jadwal First Date kitaaa💕</h2>
+      <div class="card">
+        <p><strong>Tanggal:</strong> <span id="summaryDate"></span></p>
+        <p><strong>Waktu:</strong> <span id="summaryTime"></span></p>
+        <p><strong>Tempat:</strong></p>
+        <img id="summaryPlace" src="" alt="Tempat Kencan" />
+        <p><strong>Gak sabar banget buat first datee nantiii Talita 🥹🫶</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
