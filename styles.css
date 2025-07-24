@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ffe3ec, #fce4ec);
+  color: #333;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: #fff0f5;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.page {
+  display: none;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.page.active {
+  display: block;
+}
+
+h1, h2 {
+  color: #d63384;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #ff80ab;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ec407a;
+}
+
+.btn-group {
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.image-options {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-options label {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.image-options input[type="radio"] {
+  display: none;
+}
+
+.image-options img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid transparent;
+  transition: 0.3s ease;
+}
+
+.image-options input[type="radio"]:checked + img {
+  border-color: #d63384;
+  transform: scale(1.05);
+}
+
+.card {
+  background-color: #ffeef4;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#summaryPlace {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border-radius: 12px;
+}
+
+/* Cursor Heart Placeholder (if you implement it later) */
+.cursor-heart {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: pink;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  z-index: 9999;
+  display: none;
+}
+
+/* Page transition */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#noBtn {
+  position: relative;
+  transition: top 0.2s, left 0.2s;
+}
+
+input[type="date"],
+input[type="time"] {
+  background-color: white;
+  border: 2px solid #f8c8dc;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  color: #333;
+  width: 100%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  margin-bottom: 16px;
+}
+
+input[type="date"]:focus,
+input[type="time"]:focus {
+  border-color: #f06292;
+  outline: none;
+  box-shadow: 0 0 8px rgba(240, 98, 146, 0.2);
+}
+
+button.lanjutkan-btn {
+  background-color: #f06292;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+button.lanjutkan-btn:hover {
+  background-color: #ec407a;
+  transform: scale(1.05);
+}
